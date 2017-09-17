@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 点击按钮修改超链接的地址及热点文 -->
+</head>
+<body>
+    <input type="button" value='点击'/>
+    <a href="http://www.baidu.com"  target='_blank'></a>
+    <script>
+    var aBtn=document.getElementsByTagName('input')[0];
+    var aA=document.getElementsByTagName('a')[0];
+    aBtn.onclick=function(){
+        aA.herf='http://www.163.com';
+        aA.innerHTML='打开百度';//热点文
+    }
+    
+    </script>
+</body>
+</html>

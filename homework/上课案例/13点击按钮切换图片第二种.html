@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="显示美女1" /><br />
+		<img src="img/a.jpg" alt="" />
+		<script>
+		var oIpt = document.getElementsByTagName('input');
+		var oImg = document.getElementsByTagName('img');
+		oIpt[0].onclick= function (){
+		if(oIpt[0].value=='显示美女1'){
+			oIpt[0].value='显示美女2';
+			oImg[0].src="img/b.jpg";
+		}else{
+			oIpt[0].value='显示美女1';
+			oImg[0].src="img/a.jpg";
+		}
+		
+		}
+		     
+		</script>
+	</body>
+</html>

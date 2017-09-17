@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        margin-left: -50px;
+        mask-type: -50px;
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <input type="button" value='显示'/>
+    <div>我是一个盒子</div>
+    <script>
+    var aIpt=document.getElementsByTagName('input');
+    var aDiv=document.getElementsByTagName('div')[0];
+    var unOff=true;
+  
+    aIpt[0].onclick=function(){
+  if(unOff){
+            this.value='隐藏';
+        aDiv.style.display='block';
+   
+    }else{
+      
+        this.value='显示';
+        aDiv.style.display='none';
+    }
+    unOff=!unOff;
+}
+    
+  
+    
+    </script>
+
+
+</html>

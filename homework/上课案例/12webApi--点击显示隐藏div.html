@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<style>
+	div{
+		width: 100px;
+		height: 100px;
+		background-color:red;
+		
+	}
+</style>
+<body>
+	<input type="button" value='隐藏'/><br>
+	<div></div>
+	<script>
+	var aIpt=document.getElementsByTagName('input');
+	var aDiv=document.getElementsByTagName('div');
+	var unOff=true;
+	
+	aIpt[0].onclick=function(){
+		if(unOff){
+		aIpt[0].value='显示';
+		aDiv[0].style.display='none';
+	}else{
+
+		aIpt[0].value='隐藏';
+		aDiv[0].style.display='block';
+	}
+    
+	unOff=!unOff;
+	}
+	</script>
+</html>

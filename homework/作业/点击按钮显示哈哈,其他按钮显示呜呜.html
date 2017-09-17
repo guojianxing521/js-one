@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value='呜呜'/>
+    <input type="button" value='呜呜'/>
+    <input type="button" value='呜呜'/>
+    <input type="button" value='呜呜'/>
+    <script>
+    var aIpt=document.getElementsByTagName('input');
+    //建立一个变量，用来存储曾经编辑过的按钮
+    
+        //解决办法一，让之前单击过的按钮改为呜呜
+    var a=null;
+    // var a=-1;
+    for(var i=0;i<aIpt.length;i++){
+        aIpt[i].onclick=function(){
+            if(a!=null){
+            a.value='呜呜';
+            }
+            this.value='哈哈';
+            a=this;
+        //   if(a!=-1){
+        //     aIpt[a].value='呜呜';//有错误
+        //     }
+        //     this.value='哈哈';
+        //     a=i;
+        // }
+        }
+
+
+    }
+    //一点击把所有按钮变成呜呜，然后让当前显示哈哈
+    //暴力清楚
+    // for(var i=0;i<aIpt.length;i++){
+    //     aIpt[i].onclick=function(){
+           
+    //         for(var j=0;j<aIpt.length;j++){
+    //         aIpt[j].value='呜呜'
+    //         }
+    //         this.value='哈哈';
+
+    //     }
+    // }
+    
+
+    </script>
+</body>
+</html>
